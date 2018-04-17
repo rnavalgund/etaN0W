@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 6" translatesAutoresizingMaskIntoConstraints="NO" id="8VG-s3-ort">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ygp-rY-QmC">
+                                <rect key="frame" x="93" y="277" width="188" height="113"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="113" id="eK8-xS-MqC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="FUCC KTI">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="button_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Heu-fN-qGQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ETA N0W !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zr6-bW-COc">
+                                <rect key="frame" x="16" y="31" width="343" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="9gW-Q8-Slz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nigga_img" translatesAutoresizingMaskIntoConstraints="NO" id="8uX-DJ-eXe">
+                                <rect key="frame" x="16" y="483" width="343" height="164"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you see this image, you have successfully run the POC now." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gP5-Mm-nAN">
+                                <rect key="frame" x="16" y="420" width="338" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="Qcb-Dv-0Rw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zr6-bW-COc" firstAttribute="centerX" secondItem="Ygp-rY-QmC" secondAttribute="centerX" id="7sD-of-cPo"/>
+                            <constraint firstItem="8VG-s3-ort" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9Rn-74-tAo"/>
+                            <constraint firstItem="8uX-DJ-eXe" firstAttribute="top" secondItem="gP5-Mm-nAN" secondAttribute="bottom" constant="8" symbolic="YES" id="BjG-2H-EIM"/>
+                            <constraint firstItem="8VG-s3-ort" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Byy-Nd-d6o"/>
+                            <constraint firstItem="gP5-Mm-nAN" firstAttribute="leading" secondItem="8uX-DJ-eXe" secondAttribute="leading" id="GvG-43-URv"/>
+                            <constraint firstItem="zr6-bW-COc" firstAttribute="trailing" secondItem="8uX-DJ-eXe" secondAttribute="trailing" id="HZu-p1-eFG"/>
+                            <constraint firstItem="gP5-Mm-nAN" firstAttribute="top" secondItem="Ygp-rY-QmC" secondAttribute="bottom" constant="30" id="HpA-Ih-Nr8"/>
+                            <constraint firstItem="Ygp-rY-QmC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="IeV-6F-5hd"/>
+                            <constraint firstItem="zr6-bW-COc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="MdO-pf-eMz"/>
+                            <constraint firstItem="zr6-bW-COc" firstAttribute="leading" secondItem="gP5-Mm-nAN" secondAttribute="leading" id="XAQ-GY-19v"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gP5-Mm-nAN" secondAttribute="trailing" constant="21" id="d2C-v8-TNE"/>
+                            <constraint firstAttribute="bottom" secondItem="8uX-DJ-eXe" secondAttribute="bottom" constant="20" symbolic="YES" id="e2P-2R-RFE"/>
+                            <constraint firstItem="8VG-s3-ort" firstAttribute="centerX" secondItem="Ygp-rY-QmC" secondAttribute="centerX" id="euC-gb-mQi"/>
+                            <constraint firstItem="8VG-s3-ort" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ga9-pm-OqN"/>
+                            <constraint firstItem="zr6-bW-COc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="11" id="mtO-qh-snW"/>
+                            <constraint firstAttribute="trailing" secondItem="8VG-s3-ort" secondAttribute="trailing" id="thr-1b-JpG"/>
+                            <constraint firstItem="8VG-s3-ort" firstAttribute="centerY" secondItem="Ygp-rY-QmC" secondAttribute="centerY" id="uzY-3d-N0s"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btn" destination="Ygp-rY-QmC" id="vDT-W8-eOH"/>
+                        <outlet property="final_lbl" destination="gP5-Mm-nAN" id="EPB-lK-Bqm"/>
+                        <outlet property="nigga_image" destination="8uX-DJ-eXe" id="4zq-qU-HTl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Group 6" width="1080" height="1920"/>
+        <image name="nigga_img" width="617" height="177"/>
+    </resources>
+</document>
