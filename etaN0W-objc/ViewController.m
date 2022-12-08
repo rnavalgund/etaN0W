@@ -11,7 +11,7 @@
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *btn;
-@property (weak, nonatomic) IBOutlet UIImageView *nigga_image;
+@property (weak, nonatomic) IBOutlet UIImageView *nimage;
 @property (weak, nonatomic) IBOutlet UILabel *final_lbl;
 
 @end
@@ -28,7 +28,7 @@ NSString *str5 = @"Finished";
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    _nigga_image.hidden = true;
+    _n.hidden = true;
     _final_lbl.hidden = true;
 }
 
@@ -59,7 +59,7 @@ NSString *str5 = @"Finished";
                     
                     trigger();
                     
-                    _nigga_image.hidden = false;
+                    _nimage.hidden = false;
                     _final_lbl.hidden = false;
                     
                     
